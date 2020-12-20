@@ -19,6 +19,19 @@
     outline: none;
 }
 
+.form {
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+        "field1 textarea textarea"
+        "field2 textarea textarea"
+        "field3 textarea textarea"
+        "empty submit empty2";
+    grid-gap: 1rem;
+}
+
 .textarea {
     height: 100%;
     max-width: 100%;
@@ -26,14 +39,37 @@
     grid-area: textarea;
 }
 
-.form {
-    padding-top: 2rem;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: repeat(3, auto);
-    grid-template-areas:
-        "field1 textarea"
-        "field2 textarea"
-        "field3 textarea";
-    grid-gap: 1rem;
+.form-button {
+    grid-area: submit;
+    height: 3rem;
+    font-family: 'Righteous', cursive;
+    border: none;
+    background-color: var(--yellow);
+    color: var(--light);
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in;
+}
+
+.form-button:hover {
+    background-color: var(--orange);
+}
+
+@media (max-width: 960px) {
+    .form {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "field1"
+            "field2"
+            "field3"
+            "textarea"
+            "submit";
+        grid-gap: 1rem;
+    }
+
+    .textarea {
+        min-height: 10rem;;
+    }
 }
