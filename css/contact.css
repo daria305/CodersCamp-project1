@@ -1,7 +1,7 @@
 .section-contact {
     padding: 2rem 0 8rem 20vw;
     background: linear-gradient(75deg, rgba(0, 0, 0, 0) 30vw,
-    var(--light) 30vw), url(../img/acrylic_bacground.jpeg);
+            var(--light) 30vw), url(../img/acrylic_bacground.jpeg);
 }
 
 .free-header.free-header-contact {
