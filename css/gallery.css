@@ -66,20 +66,6 @@
 	justify-content: center;
 }
 
-
-/*---------------*/
-/***** Oscar *****/
-/*---------------*/
-
-/* <figure class="effect-oscar">
-    <img src="https://tympanus.net/Development/HoverEffectIdeas/img/9.jpg" alt="img09"/>
-    <figcaption>
-        <h2>Warm <span>Oscar</span></h2>
-        <p>Oscar is a decent man. He used to clean porches with pleasure.</p>
-        <a href="#">View more</a>
-    </figcaption>			
-</figure> */
-
 figure.effect-info {
 	background: linear-gradient(45deg, #1e1a55 0%,#2d728d 40%,#294236 100%);
 }
