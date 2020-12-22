@@ -1,0 +1,132 @@
+:root {
+    --grey: #2e2e2e;
+}
+
+.gallery-dark {
+    background-color: var(--light-grey);
+}
+
+.gallery-link {
+    text-decoration: none;
+    color: var(--orange);
+}
+
+.box--gallery {
+    border-left: 1px solid var(--shadow-color);
+    border-bottom: 1px solid var(--shadow-color);
+    box-shadow: 2px -1px 5px var(--shadow-color);
+    background-color: white;
+    margin-top: 0;
+}
+
+.gallery-header {
+    color: var(--orange);
+    font-size: 6rem;
+    position: relative;
+    bottom:-2rem;
+}
+
+.section-gallery {
+    margin-top: 6rem;
+    padding-bottom: 4rem;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-items: center;
+    row-gap: 3rem;
+    column-gap: 3rem;
+}
+
+.section-gallery__item img {
+    width: 100%;
+    height: auto;
+    box-shadow: 2px -2px 5px var(--shadow-color);
+	position: relative;
+	display: block;
+}
+
+.section-gallery__item {
+    position: relative;
+}
+
+.section-gallery__item figure {
+	position: relative;
+}
+
+.section-gallery__item figcaption {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+	color: var(--light);
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+
+/*---------------*/
+/***** Oscar *****/
+/*---------------*/
+
+/* <figure class="effect-oscar">
+    <img src="https://tympanus.net/Development/HoverEffectIdeas/img/9.jpg" alt="img09"/>
+    <figcaption>
+        <h2>Warm <span>Oscar</span></h2>
+        <p>Oscar is a decent man. He used to clean porches with pleasure.</p>
+        <a href="#">View more</a>
+    </figcaption>			
+</figure> */
+
+figure.effect-info {
+	background: linear-gradient(45deg, #1e1a55 0%,#2d728d 40%,#294236 100%);
+}
+
+figure.effect-info img {
+	opacity: 0.8;
+	transition: opacity 0.35s;
+}
+
+figure.effect-info:hover img {
+	opacity: 0.2;
+}
+
+figure.effect-info figcaption::before {
+	position: absolute;
+	top: 2rem;
+	right: 2rem;
+	bottom: 2rem;
+	left: 2rem;
+	border: 2px dashed var(--light);
+	content: '';
+}
+
+figure.effect-info figcaption::before,
+figure.effect-info p,
+figure.effect-info h2 {
+	opacity: 0;
+	transition: opacity 0.35s, transform 0.35s;
+	transform: scale(0);
+}
+
+figure.effect-info:hover figcaption::before,
+figure.effect-info:hover p,
+figure.effect-info:hover h2 {
+	opacity: 1;
+	transform: scale(1);
+}
+
+figure.effect-info h3 {
+	transition: transform 0.35s, color 0.35s, text-shadow0.35s;
+	transform: translate3d(0, 600%, 0);
+	font-size: 20px;
+	text-shadow: 2px -2px 2px var(--black);
+}
+
+figure.effect-info:hover h3 {
+	transform: translate3d(0, 0, 0);
+	color: var(--yellow);
+	text-shadow: none;
+}

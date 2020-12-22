@@ -272,7 +272,7 @@ img.arrow:hover {
 }
 
 .normal-text {
-    line-height: 1.3rem;
+    line-height: 1.4rem;
     font-size: 1.2rem;
     text-align: left;
     padding: 2rem 0;
@@ -309,7 +309,7 @@ img.arrow:hover {
 
 .free-header {
     color: var(--light-grey);
-    font-size: 5rem;
+    font-size: 5vw;
     position: relative;
     left: -5vw;
     margin: 2rem 0;
@@ -572,6 +572,9 @@ div.social-media {
 }
 
 @media (max-width:960px) {
+    .box h1 {
+        font-size: 2rem;
+    }
 
     .grid-horizontal {
         display: grid;
@@ -618,7 +621,7 @@ div.social-media {
     }
 
     .container {
-        width: 90%;
+        width: 85%;
     }
 
     .triple-box {
