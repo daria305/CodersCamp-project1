@@ -355,13 +355,13 @@ img.arrow:hover {
 .dark-img {
     position: relative;
     perspective: 500px;
-    transition: transform 0.2s ease-in, box-shadow 0.2s ease-in;
 }
 
 .dark-img img {
     width: 300px;
     height: auto;
     box-shadow: 2px -2px 5px var(--shadow-color);
+    transition: transform 0.2s ease-in, box-shadow 0.2s ease-in;
 }
 
 .dark-img .details {
@@ -405,7 +405,7 @@ img.arrow:hover {
     opacity: 1;
 }
 
-.dark-img:hover {
+.dark-img:hover img{
     transform: scale(1.05);
     box-shadow: 6px -6px 10px var(--shadow-color);
 }
@@ -562,6 +562,52 @@ div.social-media {
     width: 32px;
     height: auto;
 }
+
+.animate-rotate {
+    transform-origin: bottom left;
+    animation: rotate-text 1s ease-in forwards;
+}
+
+.animate-drop-down {
+    animation: drop-down 0.4s ease-in forwards;
+}
+
+.animate-light-up {
+    animation: light-up 1.5s ease-in-out forwards;
+}
+
+@keyframes light-up {
+    0% {color: var(--light-grey)}
+    60% {color:var(--yellow)}
+    100% {color: var(--light-grey)};
+}
+
+
+@keyframes rotate-text {
+    0% {
+        transform: translateY(-60vh) rotate(-60deg);
+    }
+    30% {
+        transform: translateY(-60vh) rotate(-60deg);
+    }
+    80% {
+        transform-origin: bottom-left;
+        transform: rotate(-60deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes drop-down {
+    0% {
+        transform: translateY(-60vh);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
 
 @media (max-width: 1200px) {
 
