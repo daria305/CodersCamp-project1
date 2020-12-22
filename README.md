@@ -13,7 +13,7 @@ Stopka zawiera odnośniki do social mediów w formie ikon dopasowanych do stylu 
 
  - Strona na PC
 
-![./.github/images/main-page.png](./.github/images/main-page.png)
+![./.github/images/main-page.jpg](./.github/images/main-page.jpg)
 
  - Strona na urządzeniu mobilnym
 
