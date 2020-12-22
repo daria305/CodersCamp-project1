@@ -23,39 +23,40 @@
 
 <body>
     <header class="sticky">
-        <nav class="grid-horizontal nav-wrapper">
-            <div class="top-header">
+        <nav class="navigation-bar--grid navigation-bar">
+            <div class="navigation-bar__header">
                 <h1>.Coders<span>Camp</span></h1>
             </div>
-            <ul class="nav grid-menu">
+            <ul class="navigation-bar__nav navigation-bar__nav--grid">
                 <li><a href="index.html">Start</a></li>
                 <li><a href="index.html#projects">Projekty</a></li>
                 <li><a href="galeria.html">Galeria</a></li>
                 <li class="current"><a href="#">Kontakt</a></li>
             </ul>
-            <div class="top-header">
+            <div class="navigation-bar__header">
                 <h3><span>Projekt</span> 1</h3>
             </div>
         </nav>
     </header>
     <main>
-        <div class="section-contact">
+        <div class="contact-section">
             <div class="container">
-                <h2 class="free-header free-header-contact">
+                <h2 class="free-header free-header--contact">
                     Kontakt
                 </h2>
-                <div class="on-side-contact box">
+                <div class="contact-section__on-side box">
                     <h1 class="underligned">Napisz do mnie</h1>
-                    <form class="form" method="post">
-                        <input type="text" name="name" id="name" required="required" class="form-field"
+                    <form class="contact-section__form" method="post">
+                        <input type="text" name="name" id="name" required="required" class="contact-section__form-field"
                             placeholder="Imie" />
-                        <input type="email" name="mail" id="mail" required="required" class="form-field"
-                            placeholder="Email" />
-                        <input type="text" name="subject" id="subject" required="required" class="form-field"
-                            placeholder="Temat" />
-                        <textarea name="message" id="message" class="form-field textarea"
+                        <input type="email" name="mail" id="mail" required="required"
+                            class="contact-section__form-field" placeholder="Email" />
+                        <input type="text" name="subject" id="subject" required="required"
+                            class="contact-section__form-field" placeholder="Temat" />
+                        <textarea name="message" id="message"
+                            class="contact-section__form-field contact-section__textarea"
                             placeholder="Wiadomość"></textarea>
-                        <button type="submit" id="submit" name="submit" class="form-button">Wyślij</button>
+                        <button type="submit" id="submit" name="submit" class="contact-section__button">Wyślij</button>
                     </form>
                 </div>
             </div>
@@ -63,8 +64,8 @@
     </main>
     <footer>
         <div class="container">
-            <div class="footer triple-box">
-                <div class="column-text">
+            <div class="footer box--grid-triple">
+                <div class="footer__column-text">
                     <h3>Projekt 1</h3>
                     <ul>
                         <li>
@@ -78,7 +79,7 @@
                 </div>
                 <div>
                     <h1>Znajdziesz mnie także tutaj</h1>
-                    <div class="social-media">
+                    <div class="footer__social-media">
                         <a href="https://github.com/daria305" target="_blank" aria-label="GitHub"><img
                                 src="img/github.png" width=32px height=32px alt=" github logo "></a>
                         <a href="https://www.linkedin.com/in/daria-dziubaltowska/" target="_blank"
@@ -88,7 +89,7 @@
                                 src="img/gmail.png" width=32px height=32px alt=" email logo "></a>
                     </div>
                 </div>
-                <div class="copyrights"> &copy 2020. Wszelkie prawa zastrzeżone. | Projekt autorstwa Darii
+                <div class="footer__copyrights"> &copy 2020. Wszelkie prawa zastrzeżone. | Projekt autorstwa Darii
                     Dziubałtowskiej.</div>
             </div>
         </div>

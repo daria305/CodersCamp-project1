@@ -18,28 +18,28 @@
 
 <body>
     <header class="sticky">
-        <nav class="grid-horizontal nav-wrapper">
-            <div class="top-header">
+        <nav class="navigation-bar navigation-bar--grid">
+            <div class="navigation-bar__header">
                 <h1>.Coders<span>Camp</span></h1>
             </div>
-            <ul class="nav grid-menu">
+            <ul class="navigation-bar__nav navigation-bar__nav--grid">
                 <li class="current"><a href="#">Start</a></li>
                 <li><a href="#projects">Projekty</a></li>
                 <li><a href="galeria.html">Galeria</a></li>
                 <li><a href="kontakt.html">Kontakt</a></li>
             </ul>
-            <div class="top-header">
+            <div class="navigation-bar__header">
                 <h3><span>Projekt</span> 1</h3>
             </div>
         </nav>
     </header>
     <div id="banner">
-        <section class="flex-center">
-            <div class="banner-content">
+        <section class="banner--flex">
+            <div class="banner__content">
                 <h1 class="animate-rotate">Daria</h1>
                 <h2 class="animate-drop-down">Dziubałtowska</h2>
                 <h3 class="animate-light-up">Portfolio</h3>
-                <a href="#main-section"><img class="arrow-down arrow" src="img/arrow-down.png" alt="arrow down"></a>
+                <a href="#main-section"><img class="arrow arrow--down " src="img/arrow-down.png" alt="arrow down"></a>
             </div>
         </section>
     </div>
@@ -48,7 +48,7 @@
             <a id="main-section" class="anchor"></a>
             <section>
                 <h2 class="free-header">Słowem wstępu</h2>
-                <div class="box triple-box">
+                <div class="box box--grid-triple">
                     <img class="circle" src="img/photo.jpg" alt="My photo">
                     <h1 class="underligned">O mnie</h1>
                     <div class="normal-text">
@@ -64,15 +64,15 @@
             </section>
         </div>
         <section>
-            <div class="dark-section">
+            <div class="projects-section">
                 <div class="container">
                     <a id="projects" class="anchor"></a>
-                    <h2 class="free-header header-shadow">
+                    <h2 class="free-header free-header--projects header-shadow">
                         Moje projekty
                     </h2>
                     <ul class="list-boxes flex-flow">
                         <li>
-                            <div class="dark-img">
+                            <div class="projects-section__img-wraper">
                                 <a href=""><img src="img/chain.jpg" alt="projekt 1"></a>
                                 <div class="details details__box">
                                     <h3>Projekt 1</h3>
@@ -83,7 +83,7 @@
                             </div>
                         </li>
                         <li>
-                            <div class="dark-img">
+                            <div class="projects-section__img-wraper">
                                 <a href=""><img src="img/morse.jpg" alt="projekt 2"></a>
                                 <div class="details details__box">
                                     <h3>Projekt 2</h3>
@@ -94,7 +94,7 @@
                             </div>
                         </li>
                         <li>
-                            <div class="dark-img">
+                            <div class="projects-section__img-wraper">
                                 <a href=""><img src="img/robot.png" alt="projekt 3"></a>
                                 <div class="details details__box">
                                     <h3>Projekt 3</h3>
@@ -115,7 +115,7 @@
                     <h1 class="underligned">
                         Umiejętności
                     </h1>
-                    <ul class="skill-list">
+                    <ul class="skills-section__skill-list">
                         <li class="list-box-element element-shadow">Python</li>
                         <li class="list-box-element element-shadow">SQL</li>
                         <li class="list-box-element element-shadow">HTML</li>
@@ -128,20 +128,20 @@
         </section>
         <section>
             <div class="container">
-                <div class="free-section">
+                <div class="last-section">
                     <h2 class="free-header free-header--static">
                         Na koniec
                     </h2>
-                    <div class="list-boxes flex-flow">
-                        <div class="free-section__box">
-                            <p class="free-section__text">Zapraszam do odwiedzenia galerii zdjęć.
+                    <div class="list-boxes list-boxes--last-section flex-flow">
+                        <div class="last-section__box">
+                            <p class="last-section__text">Zapraszam do odwiedzenia galerii zdjęć.
                             </p>
                             <a class="button" href="galeria.html">
                                 Więcej
                             </a>
                         </div>
-                        <div class="free-section__box">
-                            <p class="free-section__text">Masz jakieś pytania? Możesz użyć formularza kontaktowego aby
+                        <div class="last-section__box">
+                            <p class="last-section__text">Masz jakieś pytania? Możesz użyć formularza kontaktowego aby
                                 się ze mną skontaktować.</p>
                             <a class="button" href="kontakt.html">
                                 Kontakt
@@ -154,8 +154,8 @@
     <a href="#"><img class="arrow-up arrow" src="img/arrow-up.png" alt="arrow up"></a>
     <footer>
         <div class="container">
-            <div class="footer triple-box">
-                <div class="column-text">
+            <div class="footer box--grid-triple">
+                <div class="footer__column-text">
                     <h3>Projekt 1</h3>
                     <ul>
                         <li>
@@ -169,7 +169,7 @@
                 </div>
                 <div>
                     <h1>Znajdziesz mnie także tutaj</h1>
-                    <div class="social-media">
+                    <div class="footer__social-media">
                         <a href="https://github.com/daria305" target="_blank" aria-label="GitHub"><img
                                 class="social-icon" src="img/github.png" alt=" github logo "></a>
                         <a href="https://www.linkedin.com/in/daria-dziubaltowska/" target="_blank"
@@ -179,7 +179,7 @@
                                 class="social-icon" src="img/gmail.png" alt=" email logo "></a>
                     </div>
                 </div>
-                <div class="copyrights"> &copy 2020. Wszelkie prawa zastrzeżone. | Projekt autorstwa Darii
+                <div class="footer__copyrights"> &copy 2020. Wszelkie prawa zastrzeżone. | Projekt autorstwa Darii
                     Dziubałtowskiej.</div>
             </div>
         </div>

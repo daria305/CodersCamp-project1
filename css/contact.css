@@ -1,14 +1,14 @@
-.section-contact {
+.contact-section {
     padding: 2rem 0 8rem 20vw;
     background: linear-gradient(75deg, rgba(0, 0, 0, 0) 30vw,
             var(--light) 30vw), url(../img/acrylic_bacground.jpeg);
 }
 
-.free-header.free-header-contact {
+.free-header--contact {
     margin-top: 0;
 }
 
-.form-field {
+.contact-section__form-field {
     width: 100%;
     padding: 1rem;
     background-color: var(--light);
@@ -17,11 +17,11 @@
     transition: border 0.2s ease-in-out;
 }
 
-.form-field:hover {
+.contact-section__form-field:hover {
     border: 1px solid var(--orange);
 }
 
-.form-field:focus {
+.contact-section__form-field:focus {
     border-top: 1px solid var(--yellow);
     border-bottom: 1px solid var(--yellow);
     border-right: 1px solid var(--yellow);
@@ -29,7 +29,7 @@
     outline: none;
 }
 
-.form {
+.contact-section__form {
     padding-top: 2rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -42,14 +42,14 @@
     grid-gap: 1rem;
 }
 
-.textarea {
+.contact-section__textarea {
     height: 100%;
     max-width: 100%;
     font-family: 'Exo', sans-serif;
     grid-area: textarea;
 }
 
-.form-button {
+.contact-section__button {
     grid-area: submit;
     height: 3rem;
     font-family: 'Righteous', cursive;
@@ -62,12 +62,12 @@
     transition: background-color 0.2s ease-in;
 }
 
-.form-button:hover {
+.contact-section__button:hover {
     background-color: var(--orange);
 }
 
 @media (max-width: 960px) {
-    .form {
+    .contact-section__form {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-areas:
@@ -79,12 +79,12 @@
         grid-gap: 1rem;
     }
 
-    .textarea {
+    .contact-section__textarea {
         min-height: 10rem;
         ;
     }
 
-    .section-contact {
+    .contact-section {
         padding-left: 0vw;
     }
 }
